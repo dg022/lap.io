@@ -5,12 +5,13 @@
 # import the necessary packages
 from twilio.rest import Client
 from imutils.video import VideoStream
+import secret
 import argparse
 import datetime
 import imutils
 import time
 import cv2
-client = Client("AC2928bbdb8a8ee1ecec20003d7caabb5c", "e60c4112b3c27f84324b3ca834db6ef0")
+client = Client(secret.x, secret.x)
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-v", "--video", help="path to the video file")
